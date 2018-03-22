@@ -1,0 +1,6 @@
+open-ledger-micro
+*.dat
+rice-box.go
+
+.DS_Store*
+Thumbs.db*

@@ -1,0 +1,31 @@
+<div id="vertical-layout">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="content-box">
+                    <div class="text-center form-group"><h1 id="content-box-title">Import Coins</h1></div>
+                    <hr />
+                    <div class="text-center form-group">
+                        <p>
+                            Import private and secret keys into your encrypted wallet.
+                        </p>
+                    </div>
+                    <form>
+                        <div class="form-group form-group-lg">
+                            <input type="text" [(ngModel)]="input.type" class="form-control" name="symbol" placeholder="Symbol (BTC, LTC, RDD, etc.)">
+                        </div>
+                        <div class="form-group form-group-lg">
+                            <input type="text" [(ngModel)]="input.secret" class="form-control" name="secret" placeholder="Private Key (Leave Blank for New)">
+                        </div>
+                        <div class="text-center form-group">
+                            <button type="button" (click)="import()" class="btn btn-default btn-lg no-radius">Import</button>
+                        </div>
+                        <div class="text-center">
+                            <p><a [routerLink]="['/dashboard']">Cancel</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

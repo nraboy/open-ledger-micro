@@ -1,0 +1,42 @@
+<div id="vertical-layout">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="content-box">
+                    <div class="text-center form-group"><h1 id="content-box-title">Create Transaction</h1></div>
+                    <hr />
+                    <div class="text-center form-group">
+                        <p>
+                            Create a signed transaction to be broadcasted on a blockchain network.
+                        </p>
+                    </div>
+                    <form>
+                        <div class="form-group form-group-lg">
+                            <input type="text" [(ngModel)]="input.txId" class="form-control" name="txId" placeholder="Previous Transaction Hash">
+                        </div>
+                        <div class="form-group form-group-lg">
+                            <input type="text" [(ngModel)]="input.sourceAddress" class="form-control" name="sourceAddress" placeholder="Sender Address">
+                        </div>
+                        <div class="form-group form-group-lg">
+                            <input type="text" [(ngModel)]="input.destinationAddress" class="form-control" name="destinationAddress" placeholder="Recipient Address">
+                        </div>
+                        <div class="form-group form-group-lg">
+                            <input type="text" [(ngModel)]="input.amount" class="form-control" name="amount" placeholder="Amount (Satoshi)">
+                        </div>
+                        <div class="text-center form-group">
+                            <div *ngIf="signedTx != ''" class="alert alert-success" role="alert">
+                                {{ signedTx }}
+                            </div>
+                        </div>
+                        <div class="text-center form-group">
+                            <button type="button" (click)="create()" class="btn btn-default btn-lg no-radius">Create</button>
+                        </div>
+                        <div class="text-center">
+                            <p><a [routerLink]="['/dashboard']">Cancel</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

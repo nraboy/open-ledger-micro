@@ -1,0 +1,26 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand">Open Ledger Micro</a>
+        </div>
+        <div *ngIf="authenticated" id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a [routerLink]="['/dashboard']"><i class="fas fa-tachometer-alt fa-lg"></i></a></li>
+                <li><a style="cursor: pointer" (click)="backup()"><i class="fas fa-clone fa-lg"></i></a></li>
+                <li><a style="cursor:pointer" (click)="disconnect()"><i class="fas fa-sign-out-alt fa-lg"></i></a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+<router-outlet></router-outlet>
+<div id="footer">
+    <div class="container">
+        <p class="footer-block">2018 &copy; <a href="https://www.thepolyglotdeveloper.com">The Polyglot Developer</a></p>
+    </div>
+</div>

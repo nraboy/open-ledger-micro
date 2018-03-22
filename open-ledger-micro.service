@@ -1,0 +1,10 @@
+[Unit]
+Description=Open Ledger Micro for Cryptocurrency
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/open-ledger
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

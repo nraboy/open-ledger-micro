@@ -1,0 +1,33 @@
+<div id="vertical-layout">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="content-box">
+                    <div class="text-center form-group"><h1 id="content-box-title">Create a Wallet</h1></div>
+                    <hr />
+                    <div class="text-center form-group">
+                        <p>
+                            Your wallet contains all your secret keys and private keys. It will be encrypted, but should
+                            be stored in a safe place. Losing your wallet will result in your coins being lost forever.
+                        </p>
+                        <p class="red-strong">Backup your wallet and store it in a safe place.</p>
+                    </div>
+                    <form>
+                        <div class="form-group form-group-lg">
+                            <input type="password" [(ngModel)]="input.password" class="form-control" name="password" placeholder="Password">
+                        </div>
+                        <div class="form-group form-group-lg">
+                            <input type="password" [(ngModel)]="input.confirmPassword" class="form-control" name="confirmPassword" placeholder="Confirm Password">
+                        </div>
+                        <div class="text-center form-group">
+                            <button type="button" (click)="create()" class="btn btn-default btn-lg no-radius">Create</button>
+                        </div>
+                        <div class="text-center">
+                            <p>Already have a wallet? <a [routerLink]="['/unlock']">Unlock existing wallet</a>.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="container" style="margin-top: 30px">
+    <div class="row" style="margin-bottom: 30px">
+        <div class="col-md-12">
+            <button [routerLink]="['/import']" class="btn btn-primary no-radius">Import</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Coin</th>
+                            <th>Symbol</th>
+                            <th>Uncompressed Address</th>
+                            <th>Compressed Address</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let coin of coins">
+                            <td>{{ coin.name }}</td>
+                            <td>{{ coin.symbol }}</td>
+                            <td><a [routerLink]="['/transaction', coin.uncompressed_address]">{{ coin.uncompressed_address }}</a></td>
+                            <td><a [routerLink]="['/transaction', coin.compressed_address]">{{ coin.compressed_address }}</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

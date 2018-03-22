@@ -1,0 +1,29 @@
+<div id="vertical-layout">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="content-box">
+                    <div class="text-center form-group"><h1 id="content-box-title">Welcome to Open Ledger Micro</h1></div>
+                    <hr />
+                    <div class="text-center form-group">
+                        <p>
+                            Your wallet and all your private keys and secret keys are encrypted.
+                            To continue, it must be unlocked.
+                        </p>
+                    </div>
+                    <form>
+                        <div class="form-group form-group-lg">
+                            <input type="password" [(ngModel)]="input.password" class="form-control" name="password" placeholder="Password">
+                        </div>
+                        <div class="text-center form-group">
+                            <button type="button" (click)="unlock()" class="btn btn-default btn-lg no-radius">Unlock</button>
+                        </div>
+                        <div class="text-center">
+                            <p>Don't have a wallet yet? <a [routerLink]="['/generate']">Create a new wallet</a>.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
