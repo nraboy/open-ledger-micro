@@ -33,6 +33,14 @@ I, Nic Raboy, am not a cryptocurrency or cryptography expert. Take time to under
 
 If you'd like to contact me about the project, find me on Twitter at [@nraboy](https://www.twitter.com/nraboy).
 
+## Donate
+
+If you found this project useful, consider donating so more resources can be invested in it or other quality projects like it:
+
+PayPal - [https://paypal.me/nraboy](https://paypal.me/nraboy)
+
+Bitcoin - [15sf3hLC4JqdBzBxSZ6PWFhbVy85Wo9Whd](bitcoin:15sf3hLC4JqdBzBxSZ6PWFhbVy85Wo9Whd)
+
 ## Resources
 
 [Create a Bitcoin Hardware Wallet with Golang and a Raspberry Pi Zero](https://www.thepolyglotdeveloper.com/2018/03/create-bitcoin-hardware-wallet-golang-raspberry-pi-zero)
